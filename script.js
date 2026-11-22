@@ -3,7 +3,6 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
   var run = function (fn) { try { fn(); } catch (e) { console.error(e); } };
 
-  // 1. Animasi muncul saat di-scroll
   run(function () {
     var items = $$(".reveal");
     var showAll = function () {
@@ -28,17 +27,14 @@
       obs.observe(el);
     });
 
-    // Pengaman: apa pun yang terjadi, semua isi muncul setelah 2,5 detik
     setTimeout(showAll, 2500);
   });
 
-  // 2. Tahun di footer
   run(function () {
     var y = $("#year");
     if (y) y.textContent = new Date().getFullYear();
   });
 
-  // 3. Navbar, menu HP, tombol ke atas
   run(function () {
     var nav = $("#nav"), toggle = $("#navToggle"), links = $("#navLinks"), toTop = $("#toTop");
 
@@ -66,7 +62,6 @@
     });
   });
 
-  // 4. Menu aktif mengikuti bagian yang sedang dilihat
   run(function () {
     var links = $("#navLinks");
     if (!links || !("IntersectionObserver" in window)) return;
@@ -83,7 +78,6 @@
     $$("main section[id]").forEach(function (s) { spy.observe(s); });
   });
 
-  // 5. Efek mengetik
   run(function () {
     var el = $("#typed");
     if (!el) return;
@@ -101,7 +95,6 @@
     type();
   });
 
-  // 6. Form kontak
   run(function () {
     var form = $("#contactForm"), status = $("#formStatus");
     if (!form || !status) return;
