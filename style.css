@@ -38,7 +38,6 @@ body {
 h1, h2, h3 { font-family: var(--font-serif); line-height: 1.2; }
 em { font-style: italic; color: var(--terracotta); }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -53,7 +52,6 @@ em { font-style: italic; color: var(--terracotta); }
 .btn--outline:hover { background: var(--blush); }
 .btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
 
-/* Navbar */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -91,7 +89,6 @@ em { font-style: italic; color: var(--terracotta); }
 .nav__toggle.is-open span:nth-child(2) { opacity: 0; }
 .nav__toggle.is-open span:nth-child(3) { top: 10px; transform: rotate(-45deg); }
 
-/* Hero */
 .hero {
   display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 50px;
   min-height: 100vh;
@@ -127,7 +124,6 @@ em { font-style: italic; color: var(--terracotta); }
 .sticker--flower { bottom: 4%; left: 6%; color: var(--terracotta); animation-delay: -2s; }
 @keyframes float { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-12px) rotate(10deg); } }
 
-/* Marquee */
 .marquee {
   overflow: hidden; white-space: nowrap;
   background: var(--terracotta); color: var(--paper);
@@ -138,7 +134,6 @@ em { font-style: italic; color: var(--terracotta); }
 .marquee__track span { padding-right: 20px; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
-/* Sections */
 .section { padding: 90px 6vw; }
 .section--tint { background-color: var(--paper-2); border-block: 2px dashed var(--ink-soft); }
 .section__title {
@@ -150,7 +145,6 @@ em { font-style: italic; color: var(--terracotta); }
   font-weight: 500; color: var(--teal); margin-bottom: 4px;
 }
 
-/* About */
 .about { max-width: 700px; margin: 0 auto 40px; }
 .about__card {
   background: #fffdf6; border: 2px solid var(--ink); border-radius: var(--radius);
@@ -173,7 +167,6 @@ em { font-style: italic; color: var(--terracotta); }
 .stamp:nth-child(even) { transform: rotate(2deg); border-color: var(--terracotta); color: var(--terracotta); }
 .stamp:hover { transform: rotate(0) scale(1.08); }
 
-/* Educations */
 .edu {
   display: grid; gap: 30px; max-width: 1000px; margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -194,7 +187,6 @@ em { font-style: italic; color: var(--terracotta); }
 .edu__school { color: var(--teal); font-weight: 500; margin-bottom: 8px; font-size: .9rem; }
 .edu__card p:last-child { color: var(--ink-soft); font-size: .88rem; }
 
-/* Projects */
 .grid {
   display: grid; gap: 30px; max-width: 1000px; margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -221,7 +213,6 @@ em { font-style: italic; color: var(--terracotta); }
   background: var(--paper-2); border: 1px solid var(--ink-soft);
 }
 
-/* Experience */
 .timeline { max-width: 700px; margin: 0 auto; position: relative; padding-left: 40px; }
 .timeline::before {
   content: ""; position: absolute; left: 10px; top: 6px; bottom: 6px;
@@ -239,7 +230,6 @@ em { font-style: italic; color: var(--terracotta); }
 .timeline__place { color: var(--terracotta); font-weight: 500; font-size: .88rem; margin-bottom: 4px; }
 .timeline p { color: var(--ink-soft); font-size: .92rem; }
 
-/* Contact */
 .letter {
   position: relative; max-width: 620px; margin: 0 auto;
   background: #fffdf6; padding: 40px 36px;
@@ -270,7 +260,6 @@ em { font-style: italic; color: var(--terracotta); }
 }
 .socials a:hover { background: var(--mustard); transform: translateY(-3px); }
 
-/* Footer & tombol ke atas */
 .footer {
   text-align: center; padding: 28px 6vw; font-size: .85rem;
   background: var(--ink); color: var(--paper-2);
@@ -283,11 +272,9 @@ em { font-style: italic; color: var(--terracotta); }
 }
 .to-top.is-show { opacity: 1; pointer-events: auto; transform: none; }
 
-/* Animasi muncul: baru aktif jika script.js berhasil jalan (class "js") */
 .js .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s ease, transform .8s ease; }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 
-/* Responsive */
 @media (max-width: 960px) {
   .nav__links { gap: 16px; }
   .nav__links a { font-size: .8rem; }
