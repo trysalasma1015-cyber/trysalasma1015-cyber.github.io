@@ -290,8 +290,8 @@ em { font-style: italic; color: var(--terracotta); }
 }
 .to-top.is-show { opacity: 1; pointer-events: auto; transform: none; }
 
-.reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s ease, transform .8s ease; }
-.reveal.is-visible { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (max-width: 960px) {
   .nav__links { gap: 16px; }
@@ -325,5 +325,5 @@ em { font-style: italic; color: var(--terracotta); }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
