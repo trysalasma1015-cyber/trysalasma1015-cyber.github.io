@@ -7,8 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
 
@@ -31,7 +30,7 @@
       <div class="hero__text reveal">
         <p class="eyebrow">— Welcome to my portofolio —</p>
         <h1>Halo, saya <em>Trysa Lasmaoktori</em></h1>
-        <p class="hero__role">Saya seorang Mahasiswa Sistem Informasi <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+        <p class="hero__role">Saya seorang <span id="typed" class="typed">Mahasiswa Sistem Informasi</span><span class="cursor">|</span></p>
         <p class="hero__desc">Saya memiliki ketertarikan pada teknologi, administrasi, dan pengolahan data.</p>
         <div class="hero__btns">
           <a href="#projects" class="btn btn--solid">Lihat Karya</a>
@@ -41,8 +40,8 @@
 
       <div class="hero__photo reveal">
         <div class="polaroid">
-          <div class="polaroid__img"><img src="foto saya.jpeg" alt="Foto Trysa Lasmaoktori" /></div>
-          <p class="polaroid__cap">Trysa Lasmaoktori.</p>
+          <div class="polaroid__img"><img src="foto.jpg" alt="Foto Trysa Lasmaoktori" /></div>
+          <p class="polaroid__cap">Trysa L.</p>
           <div class="tape"></div>
         </div>
         <div class="sticker sticker--sun">☀</div>
@@ -59,16 +58,14 @@
 
     <section class="section" id="about">
       <h2 class="section__title reveal"><small>Kenali lebih dekat</small>About Me</h2>
-
       <div class="about reveal">
         <div class="about__card">
-          <div class="about__photo"><img src="foto saya.jpeg" alt="Foto Trysa Lasmaoktori" /></div>
+          <div class="about__photo"><img src="foto.jpg" alt="Foto Trysa Lasmaoktori" /></div>
           <p>Saya mahasiswa Program Studi Sistem Informasi di Universitas Mandiri.</p>
           <p>Saya merupakan pribadi yang terorganisir, bertanggung jawab, dan memiliki ketertarikan untuk mempelajari hal-hal baru. Saya tertarik mengembangkan kemampuan di bidang teknologi informasi, administrasi, serta pengolahan data.</p>
           <p>Saya percaya bahwa proses belajar dan pengalaman merupakan bagian penting untuk mengembangkan kemampuan diri.</p>
         </div>
       </div>
-
       <div class="stamps reveal">
         <span class="stamp">Teknologi Informasi</span>
         <span class="stamp">Administrasi</span>
@@ -98,7 +95,6 @@
 
     <section class="section" id="projects">
       <h2 class="section__title reveal"><small>Karya saya</small>My Project</h2>
-
       <div class="grid">
         <article class="card reveal">
           <div class="card__img c1"><span>Web Programming</span></div>
@@ -106,17 +102,14 @@
             <h3>Kalkulator Web Sederhana</h3>
             <p>Aplikasi kalkulator interaktif berbasis web yang dirancang untuk melakukan operasi aritmatika dasar sebagai bagian dari penugasan mata kuliah Pemrograman Web.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a href="#" class="card__link">Lihat proyek →</a>
           </div>
         </article>
-
         <article class="card reveal">
           <div class="card__img c3"><span>Web Development</span></div>
           <div class="card__body">
             <h3>Website Portofolio &amp; Latihan Web</h3>
             <p>Kumpulan halaman web latihan mandiri dan portofolio profesional yang mencakup profil, jadwal kuliah, form, serta tabel data terstruktur.</p>
             <div class="tags"><span>HTML5</span><span>CSS3</span><span>GitHub Pages</span></div>
-            <a href="#" class="card__link">Lihat proyek →</a>
           </div>
         </article>
       </div>
@@ -148,21 +141,19 @@
 
     <section class="section" id="contact">
       <h2 class="section__title reveal"><small>Mari terhubung</small>Contact</h2>
-
       <div class="letter reveal">
         <p class="letter__intro">Punya pertanyaan atau sekadar ingin menyapa? Tulis saja di sini.</p>
         <form id="contactForm" novalidate>
           <label>Nama <input type="text" name="nama" placeholder="Nama lengkap" required /></label>
-          <label>Email <input type="email" name="email" placeholder="kamu@email.com" required /></label>
+          <label>Email <input type="email" name="email" placeholder="nama@email.com" required /></label>
           <label>Pesan <textarea name="pesan" rows="4" placeholder="Tulis pesanmu…" required></textarea></label>
           <button type="submit" class="btn btn--solid">Kirim Pesan ✉</button>
           <p class="form__status" id="formStatus" role="status"></p>
         </form>
         <div class="letter__stamp">Pos<br />Udara</div>
       </div>
-
       <div class="socials reveal">
-        <a href="https://www.instagram.com/trylsma?hvrq=MTlwbTlvbTVocm9wdg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.instagram.com/trylsma" target="_blank" rel="noopener">Instagram</a>
         <a href="mailto:trysalasma1015@gmail.com">Email</a>
       </div>
     </section>
@@ -170,10 +161,11 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Trysa Lasmaoktori</p>
+    <p>© <span id="year">2026</span> Trysa Lasmaoktori</p>
   </footer>
 
   <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
-  <script src="script.js"></script>
+
+  <script src="script.js?v=3"></script>
 </body>
 </html>
