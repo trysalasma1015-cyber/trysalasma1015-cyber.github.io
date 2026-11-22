@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   const run = (fn) => { try { fn(); } catch (err) { console.error(err); } };
 
+  // 1. Munculkan isi halaman (dijalankan pertama)
   run(() => {
     const items = $$(".reveal");
     if (!("IntersectionObserver" in window)) {
@@ -26,11 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // 2. Tahun di footer
   run(() => {
     const year = $("#year");
     if (year) year.textContent = new Date().getFullYear();
   });
 
+  // 3. Navbar, menu HP, tombol ke atas
   run(() => {
     const nav = $("#nav");
     const toggle = $("#navToggle");
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (toTop) toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   });
 
+  // 4. Menu aktif mengikuti bagian yang dilihat
   run(() => {
     const links = $("#navLinks");
     if (!links) return;
@@ -78,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $$("main section[id]").forEach((s) => spy.observe(s));
   });
 
+  // 5. Efek mengetik
   run(() => {
     const typedEl = $("#typed");
     if (!typedEl) return;
@@ -95,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     type();
   });
 
+  // 6. Form kontak
   run(() => {
     const form = $("#contactForm");
     const status = $("#formStatus");
